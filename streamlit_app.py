@@ -15,7 +15,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 # LLM Wrapper
 
-def call_llm(prompt: str, model: str = "mixtral-8x7b-32768") -> str:
+def call_llm(prompt: str, model: str = "llama-3.1-8b-instant") -> str:
     try:
         response = client.chat.completions.create(
             model=model,
